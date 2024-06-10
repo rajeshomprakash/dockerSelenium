@@ -15,10 +15,10 @@ To start the standalone server for Firefox, use the following command:
 docker run --rm -it -p 4442:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g seleniarm/standalone-firefox:latest
 
 To see what is happening inside the Chrome container, head to:
-http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
+http://localhost:7900/?autoconnect=1&resize=scale&password=secret
 
 To see what is happening inside the Firefox container, head to:
-http://localhost:7901/?autoconnect=1&resize=scale&password=secret.
+http://localhost:7901/?autoconnect=1&resize=scale&password=secret
 
 ### Pre-requisite
 Run command mvn clean install -DskipTests=true
