@@ -20,6 +20,9 @@ http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
 To see what is happening inside the Firefox container, head to:
 http://localhost:7901/?autoconnect=1&resize=scale&password=secret.
 
+### Pre-requisite
+Run command mvn clean install -DskipTests=true
+
 ### To use Chrome browser
 Run command mvn test -DBROWSER=chrome
 
