@@ -36,5 +36,7 @@ Run command mvn clean package -DskipTests=true
 
 # Run package present inside target folder
 cd target
+
 sudo chmod -R u+rwx,go+rwx .
+
 java -DBROWSER=firefox -cp "seleniumDocker.jar:seleniumDocker-tests.jar:libs/*" org.testng.TestNG ../testng.xml
