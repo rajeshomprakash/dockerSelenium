@@ -28,3 +28,13 @@ Run command mvn test -DBROWSER=chrome
 
 ###  To use firefox browser
 Run command mvn test -DBROWSER=firefox
+
+### To create and run the project as package
+
+# Create package
+Run command mvn clean package -DskipTests=true
+
+# Run package present inside target folder
+cd target
+sudo chmod -R u+rwx,go+rwx .
+java -DBROWSER=firefox -cp "seleniumDocker.jar:seleniumDocker-tests.jar:libs/*" org.testng.TestNG ../testng.xml
