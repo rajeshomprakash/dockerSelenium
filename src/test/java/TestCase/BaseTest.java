@@ -22,6 +22,10 @@ public class BaseTest {
 			host=System.getProperty("HUB_HOST");
 			
 		}
+		else
+		{
+			host = "https://lamdatestHub.com"
+		}
 		if(Objects.isNull(browser))
 			browser = "Chrome";
 		System.out.println("The browser initiated is "+browser);
