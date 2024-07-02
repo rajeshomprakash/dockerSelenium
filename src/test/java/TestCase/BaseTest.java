@@ -14,6 +14,7 @@ import java.util.Objects;
 public class BaseTest {
 	protected WebDriver driver ;
 	String completeURL;
+	//Comment
 	String browser = System.getProperty("BROWSER");
 	@BeforeTest
 	public void setUpDriver() throws MalformedURLException {
